@@ -1,0 +1,46 @@
+.home_links {
+  height: 150px;
+  width: 100%;
+  border: 2px solid gray;
+  background-color: #50e3cd;
+  display: inline-block;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.home_links div {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.home_links:hover {
+  text-decoration: none;
+  background-color: #34a8c4;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav li {
+  margin: 10px 0;
+  border-right: 2px solid #ddd;
+}
+
+.nav li:first-child {
+  border-left: 2px solid #ddd;
+}
+
+.nav li a {
+  color: black;
+}
+
+header {
+  border-bottom: 5px solid #50e3cd;
+}

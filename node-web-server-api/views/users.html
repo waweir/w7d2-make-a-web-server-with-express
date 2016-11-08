@@ -1,0 +1,45 @@
+{% block css %}
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/global.css" />
+{% endblock %}
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/api/v1/users?format=html">Users</a></li>
+                    <li><a href="/api/v1/addresses?format=html">Addresses</a></li>
+                    <li><a href="/api/v1/items?format=html">Items</a></li>
+                    <li><a href="/api/v1/orders?format=html">Orders</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <h1>Users</h1>
+    </div>
+    <div class="row">
+        <table class="table table-hover">
+            <tbody>
+                <thead>
+                    <th>Id</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </thead>
+                {% for user in users %}
+                <tr>
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.first_name }}</td>
+                    <td>{{ user.last_name }}</td>
+                    <td>{{ user.email }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>

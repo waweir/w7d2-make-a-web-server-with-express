@@ -1,0 +1,42 @@
+{% block css %}
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/global.css" />
+{% endblock %}
+
+<div class="container">
+    <div class="row">
+        <h1>{{ heading }}</h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-6">
+            <a href="/api/v1/users?format=html" class="home_links">
+                <div>Users</div>
+            </a>
+        </div>
+        <div class="col-xs-6">
+            <a href="/api/v1/items?format=html" class="home_links">
+                <div>Items</div>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6">
+            <a href="/api/v1/addresses?format=html" class="home_links">
+                <div>Addresses</div>
+            </a>
+        </div>
+        <div class="col-xs-6">
+            <a href="/api/v1/orders?format=html" class="home_links">
+                <div>Orders</div>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+            <a href="/api.html" class="home_links">
+                <div>API Fetch Calls</div>
+            </a>
+        </div>
+    </div>
+
+</div>
